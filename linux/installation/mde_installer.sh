@@ -48,6 +48,7 @@ detect_distro()
             DISTRO='rhel'
             VERSION=7
         else
+            . /etc/os-release
             DISTRO=$ID
             VERSION=$VERSION_ID
             VERSION_NAME=$VERSION_CODENAME
